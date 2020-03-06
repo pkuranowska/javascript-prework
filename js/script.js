@@ -1,6 +1,5 @@
-var argButtonName, buttonPaper, buttonRock, buttonScissors, buttonTest;
+var argButtonName, buttonPaper, buttonRock, buttonScissors;
 
-buttonTest = document.getElementById('button-test');
 buttonRock = document.getElementById('button-rock');
 buttonPaper = document.getElementById('button-paper');
 buttonScissors = document.getElementById('button-scissors');
@@ -52,6 +51,7 @@ function displayResult(argPlayerMove, argComputerMove){
 
 
 playerMove = argButtonName;
+console.log('ruch gracza to: ' + playerMove);
 randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('wylosowana liczba to: ' + randomNumber);
 computerMove = getMoveName(randomNumber);
@@ -60,10 +60,6 @@ displayResult(playerMove, computerMove);
 
 }
 
-
-buttonTest.addEventListener('click', function(){ 
-  buttonClicked('Guzik TEST'); 
-});
 buttonRock.addEventListener('click', function(){ 
   buttonClicked('kamień');
  });
