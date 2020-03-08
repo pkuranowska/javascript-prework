@@ -1,6 +1,6 @@
-var argButtonName, buttonPaper, buttonRock, buttonScissors;
+var argButtonName;
 
-buttonRock = document.getElementById('button-rock');
+const buttonRock = document.getElementById('button-rock');
 buttonPaper = document.getElementById('button-paper');
 buttonScissors = document.getElementById('button-scissors');
 
@@ -11,7 +11,7 @@ function buttonClicked(argButtonName){
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
-  var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
+  var computerMove, playerMove, randomNumber;
 
 /**
  * Describe this function...
